@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - AK Hospitals</title>
+    <meta name="description" content="Book doctor appointment online at AK Hospitals. Quick, easy, and secure appointment booking system.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                        <span class="logo-text">AK Hospitals</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="our-hospitals.html" class="nav-link">Our Hospitals</a></li>
+                    <li class="nav-item"><a href="specialities.html" class="nav-link">Specialities</a></li>
+                    <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="nav-link active">Appointment</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-btn">
+                    <a href="appointment.html" class="btn-primary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="appointment-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <div class="hero-badge">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Book Appointment Online</span>
+                    </div>
+                    <h1 class="hero-title">Get Expert Care in <span class="gradient-text">3 Easy Steps</span></h1>
+                    <p class="hero-subtitle">Complete your appointment booking in less than 2 minutes. No waiting required!</p>
+                    <div class="steps-preview">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <span>Fill Details</span>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <span>Select Doctor</span>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <span>Confirm Booking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form Section -->
+    <section class="appointment-form-section section-padding">
+        <div class="container">
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>Book Your Appointment</h2>
+                    <p>Fill the form below and our team will contact you within 30 minutes</p>
+                </div>
+
+                <form id="appointmentForm" class="appointment-form">
+                    <div class="form-grid">
+                        <!-- Personal Details -->
+                        <div class="form-group">
+                            <label for="patientName">Full Name *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-user"></i>
+                                <input type="text" id="patientName" name="patientName" required 
+                                       placeholder="Enter your full name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patientEmail">Email Address *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" id="patientEmail" name="patientEmail" required 
+                                       placeholder="your.email@example.com">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patientPhone">Phone Number *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-phone"></i>
+                                <input type="tel" id="patientPhone" name="patientPhone" required 
+                                       placeholder="10-digit mobile number">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="patientAge">Age / Gender</label>
+                            <div class="input-wrapper flex">
+                                <input type="number" id="patientAge" name="patientAge" min="1" max="120" 
+                                       placeholder="Age">
+                                <select id="patientGender" name="patientGender">
+                                    <option value="">Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Medical Details -->
+                        <div class="form-group full-width">
+                            <label for="department">Select Department / Speciality *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-stethoscope"></i>
+                                <select id="department" name="department" required>
+                                    <option value="">Choose Department</option>
+                                    <option value="cardiology">Cardiology</option>
+                                    <option value="neurology">Neurology</option>
+                                    <option value="orthopaedics">Orthopaedics</option>
+                                    <option value="gastroenterology">Gastroenterology</option>
+                                    <option value="pediatrics">Pediatrics</option>
+                                    <option value="oncology">Oncology</option>
+                                    <option value="dermatology">Dermatology</option>
+                                    <option value="gynecology">Gynecology</option>
+                                    <option value="general-medicine">General Medicine</option>
+                                    <option value="emergency">Emergency Care</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredDate">Preferred Date *</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-calendar-alt"></i>
+                                <input type="date" id="preferredDate" name="preferredDate" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferredTime">Preferred Time</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-clock"></i>
+                                <select id="preferredTime" name="preferredTime">
+                                    <option value="">Select Time Slot</option>
+                                    <option value="09:00-11:00">09:00 AM - 11:00 AM</option>
+                                    <option value="11:00-13:00">11:00 AM - 01:00 PM</option>
+                                    <option value="14:00-16:00">02:00 PM - 04:00 PM</option>
+                                    <option value="16:00-18:00">04:00 PM - 06:00 PM</option>
+                                    <option value="18:00-20:00">06:00 PM - 08:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="preferredHospital">Preferred Hospital</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-hospital"></i>
+                                <select id="preferredHospital" name="preferredHospital">
+                                    <option value="">Any Available Hospital</option>
+                                    <option value="delhi">Delhi (Flagship)</option>
+                                    <option value="noida">Noida</option>
+                                    <option value="lucknow">Lucknow</option>
+                                    <option value="ghaziabad">Ghaziabad</option>
+                                    <option value="gurgaon">Gurgaon</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="form-group full-width">
+                            <label for="message">Symptoms / Message (Optional)</label>
+                            <div class="input-wrapper">
+                                <i class="fas fa-edit"></i>
+                                <textarea id="message" name="message" rows="4" 
+                                          placeholder="Describe your symptoms or medical concern..."></textarea>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Notice -->
+                    <div class="emergency-notice">
+                        <i class="fas fa-exclamation-triangle"></i>
+                        <span>Emergency? Call <a href="tel:+911234567890">+91 123 456 7890</a> immediately</span>
+                    </div>
+
+                    <button type="submit" class="btn-primary btn-large full-width">
+                        <i class="fas fa-paper-plane"></i>
+                        Book Appointment Now
+                    </button>
+                </form>
+
+                <!-- Success Message -->
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <div class="success-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Appointment Booked Successfully!</h3>
+                    <p>Your appointment request has been received. Our team will call you within <strong>30 minutes</strong> to confirm details.</p>
+                    <div class="booking-details">
+                        <p><strong>Reference ID:</strong> <span id="bookingRef"></span></p>
+                        <p><strong>Expected Call-back:</strong> Within 30 minutes</p>
+                    </div>
+                    <div class="success-actions">
+                        <a href="appointment.html" class="btn-outline">Book Another</a>
+                        <a href="index.html" class="btn-primary">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="appointment-benefits section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Why Book Online?</h2>
+                <p class="section-subtitle">Quick, secure, and hassle-free appointment booking</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h4>Instant Confirmation</h4>
+                    <p>Get confirmation within 30 minutes. No long waiting times.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>100% Secure</h4>
+                    <p>Your data is encrypted and protected with enterprise-grade security.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h4>Mobile Friendly</h4>
+                    <p>Book from anywhere on any device. Works perfectly on mobile.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h4>24/7 Support</h4>
+                    <p>Our team available round-the-clock to assist you.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                    </div>
+                    <p>India's leading multi-specialty hospital chain providing world-class healthcare services across 10 locations.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="specialities.html">Specialities</a></li>
+                        <li><a href="our-hospitals.html">Our Hospitals</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <p>24/7 Emergency Services</p>
+                    <div class="emergency-contact">
+                        <a href="tel:+911234567890" class="emergency-phone">
+                            <i class="fas fa-phone"></i> +91 123 456 7890
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AK Hospitals. All rights reserved. | Secure SSL Encrypted</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Enhanced appointment form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('appointmentForm');
+            const successMessage = document.getElementById('successMessage');
+            const bookingRef = document.getElementById('bookingRef');
+
+            // Set minimum date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('preferredDate').setAttribute('min', today);
+
+            // Form submission
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                if (validateForm(form)) {
+                    // Generate booking reference
+                    const ref = 'AKH' + Date.now().toString().slice(-6);
+                    bookingRef.textContent = ref;
+                    
+                    // Hide form, show success
+                    form.style.display = 'none';
+                    successMessage.style.display = 'block';
+                    
+                    // Scroll to success message
+                    successMessage.scrollIntoView({ behavior: 'smooth' });
+                    
+                    // Simulate form submission
+                    console.log('Appointment data:', getFormData(form));
+                }
+            });
+
+            // Auto-fill department from URL parameter
+            const urlParams = new URLSearchParams(window.location.search);
+            const dept = urlParams.get('dept');
+            if (dept) {
+                const departmentSelect = document.getElementById('department');
+                for (let option of departmentSelect.options) {
+                    if (option.value === dept) {
+                        option.selected = true;
+                        break;
+                    }
+                }
+            }
+        });
+
+        // Get form data
+        function getFormData(form) {
+            const formData = new FormData(form);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            return data;
+        }
+    </script>
+</body>
+</html>

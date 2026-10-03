@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specialities - AK Hospitals</title>
+    <meta name="description" content="AK Hospitals offers 20+ specialities including Cardiology, Neurology, Orthopaedics, Oncology and more with expert doctors.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                        <span class="logo-text">AK Hospitals</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="our-hospitals.html" class="nav-link">Our Hospitals</a></li>
+                    <li class="nav-item"><a href="specialities.html" class="nav-link active">Specialities</a></li>
+                    <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="nav-link">Appointment</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-btn">
+                    <a href="appointment.html" class="btn-primary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero specialities-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">Medical <span class="gradient-text">Specialities</span></h1>
+                    <p class="hero-subtitle">20+ Super-specialties with 1500+ expert doctors</p>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a> / <span>Specialities</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speciality Categories -->
+    <section class="speciality-categories section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Expertise</h2>
+                <p class="section-subtitle">Comprehensive care across all major medical disciplines</p>
+            </div>
+            
+            <div class="categories-filter">
+                <button class="filter-btn active" data-category="all">
+                    <i class="fas fa-th"></i> All Specialities
+                </button>
+                <button class="filter-btn" data-category="cardiac">
+                    <i class="fas fa-heartbeat"></i> Cardiac Sciences
+                </button>
+                <button class="filter-btn" data-category="neuro">
+                    <i class="fas fa-brain"></i> Neurosciences
+                </button>
+                <button class="filter-btn" data-category="ortho">
+                    <i class="fas fa-bone"></i> Musculoskeletal
+                </button>
+                <button class="filter-btn" data-category="cancer">
+                    <i class="fas fa-radiation"></i> Oncology
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specialities Grid -->
+    <section class="specialities-grid-section">
+        <div class="container">
+            <div class="specialities-grid" id="specialitiesGrid">
+                <!-- Cardiology -->
+                <div class="speciality-card" data-category="cardiac">
+                    <div class="speciality-image">
+                        <img src="images/cardiology.png" alt="Cardiology">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Cardiology & Cardiac Surgery</h3>
+                        <p>Complete heart care from prevention to complex surgeries with 99.5% success rate</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">25+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> TAVI/TAVR</li>
+                            <li><i class="fas fa-check"></i> Heart Transplant</li>
+                            <li><i class="fas fa-check"></i> EP Study</li>
+                        </ul>
+                        <a href="appointment.html?dept=cardiology" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+
+                <!-- Neurology -->
+                <div class="speciality-card" data-category="neuro">
+                    <div class="speciality-image">
+                        <img src="images/Neurology.png" alt="Neurology">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Neurology & Neurosurgery</h3>
+                        <p>Brain, spine, and nerve disorders treated with minimally invasive techniques</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">22+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> Stroke Unit</li>
+                            <li><i class="fas fa-check"></i> DBS Surgery</li>
+                            <li><i class="fas fa-check"></i> Spine Surgery</li>
+                        </ul>
+                        <a href="appointment.html?dept=neurology" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+
+                <!-- Orthopaedics -->
+                <div class="speciality-card" data-category="ortho">
+                    <div class="speciality-image">
+                        <img src="images/Orthopaedics.png" alt="Orthopaedics">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-bone"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Orthopaedics & Joint Replacement</h3>
+                        <p>1500+ successful joint replacements with robotic precision surgery</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">30+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> Robotic Knee/Hip</li>
+                            <li><i class="fas fa-check"></i> Sports Medicine</li>
+                            <li><i class="fas fa-check"></i> Spine Surgery</li>
+                        </ul>
+                        <a href="appointment.html?dept=orthopaedics" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+
+                <!-- Gastroenterology -->
+                <div class="speciality-card" data-category="gastro">
+                    <div class="speciality-image">
+                        <img src="images/gastro.png" alt="Gastroenterology">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-stomach"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Gastroenterology & GI Surgery</h3>
+                        <p>Complete digestive care from endoscopy to liver transplant</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">18+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> Liver Transplant</li>
+                            <li><i class="fas fa-check"></i> ERCP/EUS</li>
+                            <li><i class="fas fa-check"></i> IBD Clinic</li>
+                        </ul>
+                        <a href="appointment.html?dept=gastro" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+
+                <!-- Pediatrics -->
+                <div class="speciality-card" data-category="pediatrics">
+                    <div class="speciality-image">
+                        <img src="images/Pediatrics.png" alt="Pediatrics">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Pediatrics & Pediatric Surgery</h3>
+                        <p>Level III NICU with 95% survival rate for preterm babies</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">28+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> Level III NICU</li>
+                            <li><i class="fas fa-check"></i> Pediatric Cardiac</li>
+                            <li><i class="fas fa-check"></i> PICU</li>
+                        </ul>
+                        <a href="appointment.html?dept=pediatrics" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+
+                <!-- Oncology -->
+                <div class="speciality-card cancer-card" data-category="cancer">
+                    <div class="speciality-image">
+                        <img src="images/oncology.png" alt="Oncology">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-radiation"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Medical & Surgical Oncology</h3>
+                        <p>Comprehensive cancer care with 80% 5-year survival rate</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">20+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> PET-CT</li>
+                            <li><i class="fas fa-check"></i> TrueBeam RT</li>
+                            <li><i class="fas fa-check"></i> Immunotherapy</li>
+                        </ul>
+                        <a href="appointment.html?dept=oncology" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+
+                <!-- Dermatology -->
+                <div class="speciality-card" data-category="derma">
+                    <div class="speciality-image">
+                        <img src="images/dermatology.png" alt="Dermatology">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-hand-holding-medical"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Dermatology & Cosmetology</h3>
+                        <p>Advanced skin, hair, and laser treatments with international standards</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">15+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> Laser Treatments</li>
+                            <li><i class="fas fa-check"></i> Hair Transplant</li>
+                            <li><i class="fas fa-check"></i> Acne Clinic</li>
+                        </ul>
+                        <a href="appointment.html?dept=dermatology" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+
+                <!-- Gynecology -->
+                <div class="speciality-card" data-category="gynae">
+                    <div class="speciality-image">
+                        <img src="images/gynecology.png" alt="Gynecology">
+                        <div class="speciality-overlay">
+                            <div class="speciality-icon">
+                                <i class="fas fa-female"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="speciality-content">
+                        <h3>Obstetrics & Gynecology</h3>
+                        <p>High-risk pregnancy management with 5000+ safe deliveries annually</p>
+                        <div class="speciality-doctors">
+                            <span class="doctor-count">24+</span>
+                            <span class="doctor-label">Specialists</span>
+                        </div>
+                        <ul class="speciality-features">
+                            <li><i class="fas fa-check"></i> High-Risk Pregnancy</li>
+                            <li><i class="fas fa-check"></i> Fetal Medicine</li>
+                            <li><i class="fas fa-check"></i> Gynae Oncology</li>
+                        </ul>
+                        <a href="appointment.html?dept=gynecology" class="btn-primary speciality-btn">Consult Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctors Stats -->
+    <section class="doctors-stats section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1500">0</div>
+                    <div class="stat-label">Doctors & Specialists</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="20">0</div>
+                    <div class="stat-label">Super Specialities</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50000">0</div>
+                    <div class="stat-label">Surgeries/Year</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="99">0</div>
+                    <div class="stat-label">% Success Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section speciality-cta">
+        <div class="container">
+            <div class="cta-content text-center">
+                <h2>Need Specialist Consultation?</h2>
+                <p>Book appointment with our super-specialist doctors</p>
+                <div class="cta-buttons">
+                    <a href="appointment.html" class="btn-primary btn-large">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                    <a href="appointment.html" class="btn-outline btn-large">View All Doctors</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                    </div>
+                    <p>India's leading multi-specialty hospital chain providing world-class healthcare services across 10 locations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="specialities.html">Specialities</a></li>
+                        <li><a href="our-hospitals.html">Our Hospitals</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 123 456 7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@akhospitals.com</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <p>24/7 Emergency Services Available</p>
+                    <a href="tel:+911234567890" class="btn-primary btn-small">Call Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AK Hospitals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Speciality filter functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const specialityCards = document.querySelectorAll('.speciality-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.dataset.category;
+
+                    specialityCards.forEach((card, index) => {
+                        if (filterValue === 'all' || card.dataset.category === filterValue) {
+                            card.style.display = 'block';
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(50px)';
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                                card.style.transitionDelay = `${index * 0.1}s`;
+                            }, 100);
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

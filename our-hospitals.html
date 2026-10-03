@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Hospitals - AK Hospitals</title>
+    <meta name="description" content="AK Hospitals network across 10 locations: Delhi, Noida, Lucknow, Ghaziabad, Gurgaon, Bareilly, Budaun, Kanpur, Agra, Meerut.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                        <span class="logo-text">AK Hospitals</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="our-hospitals.html" class="nav-link active">Our Hospitals</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="specialities.html" class="nav-link">Specialities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="facilities.html" class="nav-link">Facilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="appointment.html" class="nav-link">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <div class="nav-btn">
+                    <a href="appointment.html" class="btn-primary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="page-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">Our Hospitals</h1>
+                    <p class="hero-subtitle">10 State-of-the-art facilities across North India delivering world-class healthcare</p>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a> / <span>Our Hospitals</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitals Map Section -->
+    <section class="hospitals-map section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2 class="section-title">Our Network</h2>
+                <p class="section-subtitle">Strategically located hospitals providing comprehensive healthcare services</p>
+            </div>
+            <div class="map-placeholder">
+                <div class="map-content">
+                    <i class="fas fa-map-marked-alt map-icon"></i>
+                    <h3>Interactive Map Coming Soon</h3>
+                    <p>10 Hospitals across Delhi-NCR, UP & Haryana</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hospitals Grid -->
+    <section class="hospitals-grid-section section-padding">
+        <div class="container">
+            <div class="hospitals-filter">
+                <button class="filter-btn active" data-filter="all">All Hospitals</button>
+                <button class="filter-btn" data-filter="delhi-ncr">Delhi-NCR</button>
+                <button class="filter-btn" data-filter="uttar-pradesh">Uttar Pradesh</button>
+            </div>
+            
+            <div class="hospitals-grid" id="hospitalsGrid">
+                <!-- Delhi -->
+                <div class="hospital-card" data-location="delhi-ncr">
+                    <div class="hospital-image">
+                        <img src="images/delhi.png" alt="AK Hospital Delhi">
+                        <div class="hospital-badge">Flagship Hospital</div>
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Delhi</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>4.9 (2,847 reviews)</span>
+                        </div>
+                        <p>Our flagship 500-bed multi-specialty hospital with advanced cardiac sciences, oncology, and neurosciences centers.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item">
+                                <i class="fas fa-bed"></i>
+                                <span>500 Beds</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-user-md"></i>
+                                <span>250+ Doctors</span>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7 Emergency</span>
+                            </div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <!-- Expandable Details -->
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ NABH & NABL Accredited</li>
+                                <li>✅ 24 Advanced Operation Theatres</li>
+                                <li>✅ Level III NICU & PICU</li>
+                                <li>✅ 128-Slice CT Scanner</li>
+                                <li>✅ 3T MRI & PET-CT</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Delhi:</strong> Sector 20, Dwarka, New Delhi - 110077
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+911123456789" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 11 2345 6789
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Noida -->
+                <div class="hospital-card" data-location="delhi-ncr">
+                    <div class="hospital-image">
+                        <img src="images/noida.jpg" alt="AK Hospital Noida">
+                        <div class="hospital-badge primary">Primary Care</div>
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Noida</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.8 (1,923 reviews)</span>
+                        </div>
+                        <p>300-bed facility specializing in orthopaedics, gastroenterology, and mother & child care.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>300 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>180+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ Dedicated Women's Health Centre</li>
+                                <li>✅ Advanced Arthroscopy Unit</li>
+                                <li>✅ 20 Modular OT Complex</li>
+                                <li>✅ In-house Dialysis Unit</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Noida:</strong> Sector 51, Noida - 201301
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+911223456789" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 120 345 6789
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lucknow -->
+                <div class="hospital-card" data-location="uttar-pradesh">
+                    <div class="hospital-image">
+                        <img src="images/lucknow.jpg" alt="AK Hospital Lucknow">
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Lucknow</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.7 (1,456 reviews)</span>
+                        </div>
+                        <p>Comprehensive 250-bed hospital with specialized cancer care and advanced surgical services.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>250 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>150+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ Comprehensive Cancer Centre</li>
+                                <li>✅ Robotic Surgery</li>
+                                <li>✅ Bone Marrow Transplant</li>
+                                <li>✅ 15 ICU Beds</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Lucknow:</strong> Gomti Nagar, Lucknow - 226010
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+915223456789" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 522 345 6789
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ghaziabad -->
+                <div class="hospital-card" data-location="delhi-ncr">
+                    <div class="hospital-image">
+                        <img src="images/ghaziabad.jpg" alt="AK Hospital Ghaziabad">
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Ghaziabad</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.8 (1,234 reviews)</span>
+                        </div>
+                        <p>200-bed hospital focusing on cardiac care, nephrology, and advanced diagnostics.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>200 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>120+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ Cardiac Cath Lab</li>
+                                <li>✅ Kidney Transplant Program</li>
+                                <li>✅ 24-Hour Pathology</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Ghaziabad:</strong> Vaishali, Ghaziabad - 201010
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+911323456789" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 120 456 7890
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gurgaon -->
+                <div class="hospital-card" data-location="delhi-ncr">
+                    <div class="hospital-image">
+                        <img src="images/gurgaon.jpg" alt="AK Hospital Gurgaon">
+                        <div class="hospital-badge">New Launch</div>
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Gurgaon</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.9 (892 reviews)</span>
+                        </div>
+                        <p>Newly launched 350-bed super-specialty hospital with international standards.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>350 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>200+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ International Patient Services</li>
+                                <li>✅ Da Vinci Robotic Surgery</li>
+                                <li>✅ 50 ICU Beds</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Gurgaon:</strong> Sector 45, Gurgaon - 122003
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+911242345678" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 124 234 5678
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bareilly -->
+                <div class="hospital-card" data-location="uttar-pradesh">
+                    <div class="hospital-image">
+                        <img src="images/bareilly.jpg" alt="AK Hospital Bareilly">
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Bareilly</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.6 (987 reviews)</span>
+                        </div>
+                        <p>150-bed hospital serving Rohilkhand region with comprehensive medical services.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>150 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>90+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ Trauma & Emergency Care</li>
+                                <li>✅ 24-Hour Pharmacy</li>
+                                <li>✅ Advanced Diagnostics</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Bareilly:</strong> Civil Lines, Bareilly - 243001
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+915823456789" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 581 234 5678
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Budaun -->
+                <div class="hospital-card" data-location="uttar-pradesh">
+                    <div class="hospital-image">
+                        <img src="images/budaun.jpg" alt="AK Hospital Budaun">
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Budaun</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.7 (654 reviews)</span>
+                        </div>
+                        <p>100-bed secondary care hospital providing essential medical services.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>100 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>60+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ General Medicine & Surgery</li>
+                                <li>✅ Gynaecology Services</li>
+                                <li>✅ Paediatrics Care</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Budaun:</strong> Shahshahpur Road, Budaun - 243601
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+915834567890" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 583 456 7890
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kanpur -->
+                <div class="hospital-card" data-location="uttar-pradesh">
+                    <div class="hospital-image">
+                        <img src="images/kanpur.jpg" alt="AK Hospital Kanpur">
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Kanpur</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.8 (1,123 reviews)</span>
+                        </div>
+                        <p>280-bed hospital with specialized orthopaedics and neurology departments.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>280 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>160+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ Spine Surgery Centre</li>
+                                <li>✅ Joint Replacement Unit</li>
+                                <li>✅ Stroke Treatment</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Kanpur:</strong> G.T. Road, Kanpur - 208012
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+915123456789" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 512 345 6789
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Agra -->
+                <div class="hospital-card" data-location="uttar-pradesh">
+                    <div class="hospital-image">
+                        <img src="images/agra.jpg" alt="AK Hospital Agra">
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Agra</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <span>4.7 (789 reviews)</span>
+                        </div>
+                        <p>220-bed hospital serving Western UP with comprehensive healthcare services.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>220 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>130+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Read More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ Gastroenterology Centre</li>
+                                <li>✅ Urology Services</li>
+                                <li>✅ 24-Hour Laboratory</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Agra:</strong> Trans Yamuna Colony, Agra - 282006
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+915622345678" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 562 234 5678
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Meerut -->
+                <div class="hospital-card" data-location="uttar-pradesh">
+                    <div class="hospital-image">
+                        <img src="images/meerut.jpg" alt="AK Hospital Meerut">
+                        <div class="hospital-badge">Coming Soon</div>
+                    </div>
+                    <div class="hospital-content">
+                        <h3>AK Hospital Meerut</h3>
+                        <div class="hospital-rating">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>
+                            <span>Opening 2025</span>
+                        </div>
+                        <p>Upcoming 300-bed super-specialty hospital with world-class infrastructure.</p>
+                        <div class="hospital-details">
+                            <div class="detail-item"><i class="fas fa-bed"></i><span>300 Beds</span></div>
+                            <div class="detail-item"><i class="fas fa-user-md"></i><span>200+ Doctors</span></div>
+                            <div class="detail-item"><i class="fas fa-clock"></i><span>24/7 Emergency</span></div>
+                        </div>
+                        <div class="hospital-actions">
+                            <a href="appointment.html" class="btn-primary">Pre-Book Appointment</a>
+                            <button class="btn-outline hospital-expand">Know More</button>
+                        </div>
+                    </div>
+                    <div class="hospital-expandable">
+                        <div class="expandable-content">
+                            <h4>Special Highlights:</h4>
+                            <ul>
+                                <li>✅ International Standards</li>
+                                <li>✅ Advanced Oncology</li>
+                                <li>✅ Cardiac Sciences</li>
+                            </ul>
+                            <div class="hospital-address">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <strong>Meerut:</strong> Shastri Nagar, Meerut - 250001
+                            </div>
+                            <div class="hospital-contact">
+                                <a href="tel:+911213456789" class="contact-link">
+                                    <i class="fas fa-phone"></i> +91 121 345 6789
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="network-stats section-padding">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="10">0</div>
+                    <div class="stat-label">Hospitals</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="2500">0</div>
+                    <div class="stat-label">Beds</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="1500">0</div>
+                    <div class="stat-label">Doctors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="50">0</div>
+                    <div class="stat-label">Operation Theatres</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to experience world-class healthcare?</h2>
+                <p>Book your appointment at the nearest AK Hospital today</p>
+                <div class="cta-buttons">
+                    <a href="appointment.html" class="btn-primary btn-large">Book Appointment</a>
+                    <a href="contact.html" class="btn-outline btn-large">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                    </div>
+                    <p>India's leading multi-specialty hospital chain providing world-class healthcare services across 10 locations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="our-hospitals.html">Our Hospitals</a></li>
+                        <li><a href="specialities.html">Specialities</a></li>
+                        <li><a href="appointment.html">Book Appointment</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 123 456 7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@akhospitals.com</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Emergency</h4>
+                    <p>24/7 Emergency Services Available</p>
+                    <a href="tel:+911234567890" class="btn-primary btn-small">Call Now</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AK Hospitals. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Page-specific JavaScript
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hospital filter functionality
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const hospitalCards = document.querySelectorAll('.hospital-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Update active button
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    const filterValue = btn.dataset.filter;
+
+                    hospitalCards.forEach(card => {
+                        if (filterValue === 'all' || card.dataset.location === filterValue) {
+                            card.style.display = 'block';
+                            card.style.opacity = '0';
+                            card.style.transform = 'translateY(30px)';
+                            
+                            // Trigger animation
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                                card.style.transform = 'translateY(0)';
+                            }, 100);
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    });
+                });
+            });
+
+            // Hospital expandable functionality
+            const expandBtns = document.querySelectorAll('.hospital-expand');
+            expandBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const card = btn.closest('.hospital-card');
+                    const expandable = card.querySelector('.hospital-expandable');
+                    
+                    if (expandable.style.maxHeight) {
+                        // Collapse
+                        expandable.style.maxHeight = null;
+                        btn.textContent = 'Read More';
+                        btn.innerHTML = '<i class="fas fa-plus"></i> Read More';
+                    } else {
+                        // Expand
+                        expandable.style.maxHeight = expandable.scrollHeight + 'px';
+                        btn.textContent = 'Read Less';
+                        btn.innerHTML = '<i class="fas fa-minus"></i> Read Less';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

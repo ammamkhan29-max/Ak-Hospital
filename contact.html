@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AK Hospitals</title>
+    <meta name="description" content="Contact AK Hospitals for appointments, emergencies, feedback. Phone, email, addresses for all 10 hospital locations.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                        <span class="logo-text">AK Hospitals</span>
+                    </a>
+                </div>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="our-hospitals.html" class="nav-link">Our Hospitals</a></li>
+                    <li class="nav-item"><a href="specialities.html" class="nav-link">Specialities</a></li>
+                    <li class="nav-item"><a href="facilities.html" class="nav-link">Facilities</a></li>
+                    <li class="nav-item"><a href="appointment.html" class="nav-link">Appointment</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <div class="nav-btn">
+                    <a href="appointment.html" class="btn-primary">
+                        <i class="fas fa-calendar-check"></i> Book Appointment
+                    </a>
+                </div>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="contact-hero">
+        <div class="hero-overlay">
+            <div class="container">
+                <div class="hero-content text-center">
+                    <h1 class="hero-title">Get In <span class="gradient-text">Touch</span></h1>
+                    <p class="hero-subtitle">We're here to help. Contact our team for appointments, emergencies, or queries</p>
+                    <div class="contact-quick-actions">
+                        <a href="tel:+911234567890" class="quick-action">
+                            <i class="fas fa-phone"></i>
+                            <span>Emergency: +91 123 456 7890</span>
+                        </a>
+                        <a href="appointment.html" class="quick-action">
+                            <i class="fas fa-calendar-check"></i>
+                            <span>Book Appointment</span>
+                        </a>
+                    </div>
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a> / <span>Contact Us</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-content section-padding">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="section-header">
+                        <h2>Send us a Message</h2>
+                        <p>Our team will respond within 24 hours</p>
+                    </div>
+                    
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="contactName">Full Name *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="contactName" name="contactName" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactEmail">Email *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="contactEmail" name="contactEmail" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="contactPhone">Phone</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-phone"></i>
+                                    <input type="tel" id="contactPhone" name="contactPhone">
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="contactSubject">Subject *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-tag"></i>
+                                    <select id="contactSubject" name="contactSubject" required>
+                                        <option value="">Select Subject</option>
+                                        <option value="appointment">Appointment Query</option>
+                                        <option value="emergency">Emergency</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="billing">Billing</option>
+                                        <option value="general">General Query</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="contactMessage">Message *</label>
+                                <div class="input-wrapper">
+                                    <i class="fas fa-comment"></i>
+                                    <textarea id="contactMessage" name="contactMessage" rows="6" required 
+                                              placeholder="Tell us how we can help you..."></textarea>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="btn-primary btn-large full-width">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-section">
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>24/7 Helpline</h3>
+                        <p>Available round the clock for emergencies and appointments</p>
+                        <div class="contact-numbers">
+                            <a href="tel:+911234567890" class="phone-number primary">
+                                <i class="fas fa-mobile-alt"></i>
+                                +91 123 456 7890
+                            </a>
+                            <a href="tel:+911234567891" class="phone-number">
+                                <i class="fas fa-headset"></i>
+                                +91 123 456 7891
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email Us</h3>
+                        <p>Write to us for non-emergency queries</p>
+                        <div class="contact-emails">
+                            <a href="mailto:info@akhospitals.com" class="email-link">
+                                info@akhospitals.com
+                            </a>
+                            <a href="mailto:appointments@akhospitals.com" class="email-link">
+                                appointments@akhospitals.com
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card full-height">
+                        <div class="contact-card-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Visit Us</h3>
+                        <p>Find our hospitals across North India</p>
+                        <div class="hospital-locations">
+                            <div class="location-item">
+                                <span>🏥 Delhi (HQ)</span>
+                                <span>Sector 20, Dwarka</span>
+                            </div>
+                            <div class="location-item">
+                                <span>🏥 Noida</span>
+                                <span>Sector 51</span>
+                            </div>
+                            <div class="location-item">
+                                <span>🏥 Lucknow</span>
+                                <span>Gomti Nagar</span>
+                            </div>
+                        </div>
+                        <a href="our-hospitals.html" class="btn-primary mt-3">View All Locations</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Google Map Placeholder -->
+    <section class="map-section section-padding">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Find Us on Map</h2>
+                <p class="section-subtitle">Our hospitals are strategically located for easy access</p>
+            </div>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <div class="map-icon-large">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3>Interactive Map</h3>
+                    <p>Click below to open Google Maps with all our hospital locations</p>
+                    <div class="map-buttons">
+                        <a href="https://maps.google.com" target="_blank" class="btn-primary">
+                            <i class="fab fa-google"></i> Open Google Maps
+                        </a>
+                        <a href="our-hospitals.html" class="btn-outline">
+                            View Hospital Addresses
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-section">
+        <div class="container">
+            <div class="section-header text-center">
+                <h2>Follow Us</h2>
+                <p class="section-subtitle">Stay connected for health tips and updates</p>
+            </div>
+            <div class="social-links-large">
+                <a href="#" class="social-link">
+                    <i class="fab fa-facebook"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                    <span>Twitter</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <img src="images/logo.png" alt="AK Hospitals" class="logo-img">
+                    </div>
+                    <p>India's leading multi-specialty hospital chain providing world-class healthcare services across 10 locations.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 123 456 7890</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@akhospitals.com</span>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="appointment.html">Appointment</a></li>
+                        <li><a href="our-hospitals.html">Hospitals</a></li>
+                        <li><a href="specialities.html">Specialities</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AK Hospitals. All rights reserved. | 24/7 Emergency Services</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact form functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.getElementById('contactForm');
+            
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                if (validateForm(contactForm)) {
+                    // Show success message
+                    alert('Thank you! Your message has been sent. We will respond within 24 hours.');
+                    contactForm.reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
